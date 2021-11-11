@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Play:wght@700&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color:  #ffffff;
+}
+
+.contenedor{
+	width: 100%;
+	display: grid;
+	grid-gap: 2px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: "header	header		header" 
+						"navbar		navbar		navbar"
+						"contenido	contenido	sidebar"
+						"footer		footer		footer";
+
+	grid-template: 		"header" 110px
+						"navbar" 50px
+						"contenido" 570px
+						"sidebar"	300px
+						"footer"	75px;
+}
+
+.contenedor	.header{
+	background-color: #ffffff;
+	grid-area: header;
+	
+}
+
+.contenedor .navbar{
+	grid-area: navbar;
+	background-color: #ffffff;
+	padding: 20px;
+
+}
+
+.contenedor	.contenido{
+	grid-area: contenido;
+	background-color: #d9d9d9;
+}
+
+
+.contenedor	.sidebar{
+	background-color: #d9d9d9;
+	grid-area: sidebar;
+}
+
+
+.contenedor	.footer{
+	background-color: #007a6b;
+	grid-area: footer;
+	padding: 20px;
+}
+
+
+#logo{
+	margin-right: 10%;
+	position: relative; top: -20%;
+}
+
+.navbar{
+	margin-left: 55%;
+}
+
+.navbar li{
+	display: inline;
+}
+
+.navbar li a{
+	margin-left: 20%;
+	text-decoration: none;
+	font-family: 'Kanit', sans-serif;
+	color: #000000;
+	font-size: 18px;
+}
+
+.nombre{
+	text-decoration: none;
+	color: #ffffff;
+	margin-left: 46%;
+	font-family: 'Kanit', sans-serif;
+}
+
+.logo{
+	margin-left: 5%;
+	position:relative;top: -90%;
+}
+
+.disney{
+	margin-left: 80%;
+	position:relative;top: -140%;
+
+}
+
+h1{
+
+	color: #004d4d;
+	margin left: 20%;
+	padding: 1%;
+	text-align: center;
+	font-family: 'Play', sans-serif;
+}
+
+#rex{
+	position: relative; top: -6%;
+}
+
+.video{
+	margin-right: 50%;
+}
+
